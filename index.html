@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Message</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+    <style>
+        body {
+        font-family: 'Amatic SC';
+        color: white;
+       
+
+    }
+    </style>
+</head>
+<body >
+
+    <div class="container">
+        
+        <div class="tulis">
+            <div class="formulir-secret">
+                <form class="secret-message">
+                    <Label>Generate Secret Message!</Label>
+                    <input  type="text" placeholder="Tuliskan minimal 6 kata dan kirim!" required>
+                    
+                    <button type="submit">Generate</button>
+                </form>
+                <form class="secret-message input-secret">
+                    <Label>Input Secret Message!</Label>
+                    <input  type="text" placeholder="Dapat pesan dari temanmu? Tulis disini" required>
+                    <button type="submit">Generate</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="interface atas"></div>
+        <div class="main" >
+            <h1></h1>
+    
+            <p class="satu"></p>
+            <p class="dua"></p>
+        </div>
+        <div class="interface"></div>
+        <div class="main-dua">
+            <h1></h1>
+        </div>
+    </div>
+    
+    <audio autoplay>
+        <source src="thing.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>

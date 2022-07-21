@@ -1,0 +1,262 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    
+    padding: 0;
+    margin: 0;
+    
+   
+  
+}
+
+.container{
+    height: 1400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-direction: column;
+    background-image: url("langit.jpeg");
+
+}
+
+.main p {
+    line-height: 0;
+    font-size: 30px;
+    animation: naikTurun 1s infinite;
+    
+}
+
+
+.main h1{
+    font-size: 55px;
+    opacity: 0;
+}
+
+.interface{
+    height: 200px;
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    top:1300px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), black, rgba(0,0,0,0));
+}
+
+.atas {
+    top: 600px;
+}
+.main-dua{
+    height: 700px;
+    background-image: url("pohon.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.main-dua h1{
+    font-size: 40px;
+    font-weight: 400;
+    opacity: 0;
+}
+
+@keyframes naikTurun {
+    0%{
+        
+        transform: translate(0,0);
+    }
+
+    50% {
+        transform: translate(0, 10px);
+    }
+
+    100% {
+        transform: translate(0,0);
+    }
+    
+}
+
+.tulis {
+    height: 700px;
+    background-image: url("bulan.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    padding: 80px;
+    box-sizing: border-box;
+    display: flex;
+    padding-top: 10px;
+    
+    justify-content: center;
+    
+}
+
+.formulir-secret{
+    height: 300px;
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    animation: animasiMuncul;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.secret-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.secret-message label, .secret-message input{
+    margin-bottom: 5px;
+
+}
+
+.secret-message label{
+    text-align: center;
+    margin-bottom:10px ;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.secret-message input{
+    width: 300px;
+    border-radius: 5px;
+    
+
+}
+/* .buttongradien{
+    
+    border-radius: 2px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #5e60ce, #5390d9,#4ea8de);
+} */
+
+.tulis button{
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #5e60ce,#5390d9, #4ea8de) 10;
+    background-image: linear-gradient(to right, #5e60ce, #5390d9,#4ea8de);
+    /* background-color: transparent;
+    background: -webkit-linear-gradient(45deg, #5e60ce,#5390d9, #4ea8de);
+    background-clip: text;
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color:white;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    font-family: 'Amatic SC';
+    font-size: 15px;
+
+}
+
+.isi-kertas{
+    position: absolute;
+    z-index: 9999;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+    overflow: hidden;
+    
+    
+}
+
+.tulisan-kertas{
+    height: 100%;
+}
+
+.tutup{
+    justify-self: end;
+}
+
+.utama-kertas{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-image: url("kertas2.png");
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    color: black;
+    align-items: center;
+    flex-direction: column;
+    line-height: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    overflow: auto;
+}
+
+.utama-kertas h1{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.utama-kertas p{
+    font-size: 10px;
+}
+
+.utama-kertas .isi{
+    line-height: 10px;
+   
+    
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ebebeb;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom, #5e60ce,#5390d9, #4ea8de );
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+@media screen and (max-width: 640px) {
+    .tulis input{
+      
+    width: 250px;
+    }
+  }
+
+  @keyframes animasiMuncul {
+    from {
+        opacity: 0;
+        transform: translate(0, 10px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+  }
